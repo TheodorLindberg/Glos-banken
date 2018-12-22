@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    margin: 10px;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "news mainContent recent" "news mainContent recent" "newFeaturs mainContent needPractise" "newFeaturs underMain needPractise";
+}
+
+.grid>div {
+    text-align: center;
+    border-width: 2px;
+    border-color: red;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.news {
+    height: 500px;
+    grid-area: news;
+}
+
+.mainContent {
+    grid-area: mainContent;
+}
+
+.recent {
+    grid-area: recent;
+}
+
+.newFeaturs {
+    grid-area: newFeaturs;
+}
+
+.needPractise {
+    grid-area: needPractise;
+}
+
+.underMain {
+    grid-area: underMain;
+}
